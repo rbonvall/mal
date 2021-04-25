@@ -2,18 +2,19 @@ package mal
 
 import scala.io.StdIn
 
-def READ(s: String): String =
-   s
+object Step0:
+   
+   def READ(s: String): String =
+      s
 
-def EVAL(s: String): String =
-   s
+   def EVAL(s: String): String =
+      s
 
-def PRINT(s: String): Unit =
-   println(s)
+   def PRINT(s: String): Unit =
+      println(s)
 
-def rep(s: String) =
-   PRINT(EVAL(READ(s)))
-
+   def rep(s: String) =
+      PRINT(EVAL(READ(s)))
 
 @main
 def step0_repl(): Unit =
@@ -23,5 +24,5 @@ def step0_repl(): Unit =
       userInput = StdIn.readLine()
       userInput != null
    do
-      rep(userInput)
+      Step0.rep(userInput)
 
