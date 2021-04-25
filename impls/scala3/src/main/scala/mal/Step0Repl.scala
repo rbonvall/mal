@@ -16,7 +16,7 @@ def rep(s: String) =
 
 
 @main
-def step0Repl(): Unit =
+def step0_repl(): Unit =
    var userInput = ""
    while
       print("user> ")
