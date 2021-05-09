@@ -10,6 +10,6 @@ enum MalType:
    case String(value: JavaString)
    case Bool(value: Boolean)
    case Number(repr: JavaString)
-   case Nl
+   case Nil
 
 
