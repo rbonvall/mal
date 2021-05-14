@@ -8,5 +8,5 @@ object Printer:
          case MalType.String(value) => s"$q$value$q"
          case MalType.Number(repr) => s"#$repr"
          case MalType.Symbol(name) => s"'$name"
-         case MalType.List(items) => items.map(printString).mkString("(", " ", ")")
+         case MalType.List(items*) => items.map(printString).mkString("(", " ", ")")
          case _ => "???"
