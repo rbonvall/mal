@@ -71,5 +71,17 @@ class ReaderSpec extends FunSuite:
       )
    }
 
+   test("reader reads non-alphabetic symbols") {
+      assertEquals(
+         Reader.readStr("(* 3 x)").head,
+         MalType.List(
+            MalType.Symbol("*"),
+            MalType.Number("3"),
+            MalType.Symbol("x"),
+         )
+      )
+   }
+
+
 
 
